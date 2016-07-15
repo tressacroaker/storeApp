@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Oswald';
+}
+
+input, button {
+  font-family: 'Oswald';
+  font-size: 25px;
+  margin: 10px;
+}
+.headcontainer {
+  background-color: rgba(46, 47, 45, 0.87);
+  height: 150px;
+  width: 100vw;
+  margin: 0;
+  font-family: 'Oswald';
+  color: #fff;
+  margin-top: 10px;
+}
+.logo, img {
+  height: 150px;
+  width: auto;
+}
+
+.title {
+  display: inline-block;
+  position: relative;
+  bottom: 64px;
+  left: 50px;
+}
+
+header {
+  float: left;
+  height: 150px;
+}
+
+.nav {
+  float: right;
+  position: relative;
+  top: 40px;
+}
+
+.home, .apparel, .shoes, .toilets, .toothcare, .cart {
+  text-align: center;
+}
+
+items-list, .cartcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.itemthing, .cartitem {
+  width: 300px;
+  border: 2px solid rgba(29, 61, 62, 0.92);
+  padding: 15px;
+  margin: 10px;
+}
+
+.nomoney {
+  height: 50vh;
+  width:50vw;
+}

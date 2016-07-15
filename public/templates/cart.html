@@ -1,0 +1,16 @@
+<div class="cart">
+  <h1>This is your shopping cart!</h1>
+  <img class="nomoney" ng-show="haza" src="https://media.giphy.com/media/Bl29a4rX52vss/giphy.gif"/>
+  <h1 ng-show="haza">You can't afford that stuff!!</h1>
+  <div ng-hide="haza" class="cartcontainer">
+    <div class="cartitem" ng-repeat="item in cart.items">
+      <img src="{{item.image}}" />
+      <h3>Item Name: {{item.name}}</h3>
+      <h3>Item Cost: ${{item.cost}}.00</h3>
+    </div>
+  </div>
+  <hr>
+  <h1>Total Cost: ${{cart.totalCost}}.00</h1>
+  <button type="button" ng-click="haza=true">Pay for Your Stuff Here</button>
+
+</div>
