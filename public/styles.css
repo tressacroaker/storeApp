@@ -1,0 +1,18 @@
+header {
+  height: 10vh;
+  width: 100vw;
+  background-color: #585F65;
+  text-align: center;
+}
+
+#outerBox {
+  background-color: #EAEAEA;
+  height: 85vh;
+  width: 100vw;
+  text-align: center;
+}
+
+a {
+  color: white;
+  font-size: 35px;
+}

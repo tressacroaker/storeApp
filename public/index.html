@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="storeApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Store App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body ng-controller="mainCtrl">
+
+    <header>
+        <a ui-sref="home" type="text">Home</a>
+        <a ui-sref="shoes" type="text">Shoes</a>
+        <a ui-sref="shirts" type="text">Shirts</a>
+        <a ui-sref="cart" type="text">Cart</a>
+    </header>
+
+    <div class="outerBox">
+        <ui-view></ui-view>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <script src="./controllers/mainCtrl.js"></script>
+    <script src="./controllers/itemsListCtrl.js"></script>
+    <script src="./controllers/addToCartCtrl.js"></script>
+    <script src="mainServ.js"></script>
+    <script src="./directives/addToCart.js"></script>
+    <script src="./directives/itemsList.js"></script>
+  </body>
+</html>
